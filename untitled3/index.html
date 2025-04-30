@@ -25,7 +25,7 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p></p>
+  <p>html scripters</p>
   <script src="js/app.js"></script>
 
 </body>
@@ -37,85 +37,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Present Simple</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #4a90e2, #8e44ad);
-      color: white;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .header-box {
-      background-color: rgba(255, 255, 255, 0.1);
-      color: white;
-      padding: 40px 60px;
-      text-align: center;
-      font-size: 2.5em;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(6px);
-      margin-bottom: 40px;
-    }
-
-    .rule-box {
-      background-color: #000;
-      border-radius: 20px;
-      padding: 30px;
-      margin-bottom: 30px;
-      font-size: 1.2em;
-      line-height: 1.6;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      color: white;
-    }
-  </style>
-</head>
-<body>
-
-<div class="container">
-  <div class="header-box">
-    Present Simple
-  </div>
-
-  <div class="rule-box">
-    <strong>1. Когда используется:</strong><br>
-    Present Simple используется для описания регулярных действий, фактов, расписаний и привычек. Например:<br>
-    — I go to school every day.<br>
-    — The sun rises in the east.
-  </div>
-
-  <div class="rule-box">
-    <strong>2. Образование утвердительных предложений:</strong><br>
-    Для I/You/We/They — используем основную форму глагола:<br>
-    — They play football.<br>
-    Для He/She/It — добавляем -s или -es к глаголу:<br>
-    — She plays tennis. / He watches TV.
-  </div>
-
-  <div class="rule-box">
-    <strong>3. Вопросы и отрицания:</strong><br>
-    Используем вспомогательный глагол do/does:<br>
-    — Do you like pizza? / Does he work here?<br>
-    Для отрицаний:<br>
-    — I don’t like tea. / She doesn’t speak Spanish.
-  </div>
-</div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Present Simple Game</title>
+  <title>Present Simple & Past Simple Game</title>
   <style>
     body {
       margin: 0;
@@ -220,62 +142,75 @@
     .show-answer-button:hover {
       background-color: #9b59b6;
     }
+
+    .rule-box {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 40px;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="game-title">🎯 Составь предложение в Present Simple</div>
+  <!-- Правила использования Present Simple -->
+  <div class="rule-box">
+    <h2>Правила использования Present Simple:</h2>
+    <p><strong>Present Simple</strong> используется для выражения регулярных действий, фактов и привычек.</p>
+    <ul>
+      <li>Для <strong>I/You/We/They</strong> используется основная форма глагола.</li>
+      <li>Для <strong>He/She/It</strong> добавляется окончание <strong>-s</strong> или <strong>-es</strong> (например, <strong>plays</strong>, <strong>goes</strong>).</li>
+      <li>Для вопросов используется вспомогательный глагол <strong>do/does</strong>: <strong>Do you play?</strong> / <strong>Does she play?</strong>.</li>
+      <li>Для отрицания используется <strong>don’t/doesn’t</strong>: <strong>I don’t play</strong> / <strong>She doesn’t play.</strong></li>
+    </ul>
+  </div>
+
+  <!-- Правила использования Past Simple -->
+  <div class="rule-box">
+    <h2>Правила использования Past Simple:</h2>
+    <p><strong>Past Simple</strong> используется для выражения действий, которые произошли в прошлом и завершены.</p>
+    <ul>
+      <li>Для большинства глаголов в <strong>Past Simple</strong> используется форма с окончанием <strong>-ed</strong> (например, <strong>worked, played, watched</strong>).</li>
+      <li>Некоторые глаголы имеют неправильную форму (например, <strong>went, saw, did</strong>).</li>
+      <li>Для отрицания в <strong>Past Simple</strong> используется вспомогательный глагол <strong>did</strong> в форме отрицания <strong>didn't</strong>.</li>
+      <li>Для вопросов используется вспомогательный глагол <strong>did</strong> в начале предложения: <strong>Did you go?</strong></li>
+    </ul>
+  </div>
+
+  <div class="game-title">🎯 Составь предложение или вопрос</div>
 
   <div class="cards">
-    <div class="card" onclick="showRandomSentence()">Card 1</div>
-    <div class="card" onclick="showRandomSentence()">Card 2</div>
-    <div class="card" onclick="showRandomSentence()">Card 3</div>
-    <div class="card" onclick="showRandomSentence()">Card 4</div>
+    <div class="card" onclick="showRandomSentence('present')">Present Simple</div>
+    <div class="card" onclick="showRandomSentence('past')">Past Simple</div>
   </div>
 
-  <div class="words-box" id="wordsBox">
-    <!-- Сюда вставляются слова -->
-  </div>
+  <div class="words-box" id="wordsBox"></div>
+  <div class="words-box" id="dropBox" style="min-height: 100px; margin-top: 30px;"></div>
 
-  <div class="words-box" id="dropBox" style="min-height: 100px; margin-top: 30px;">
-    <!-- Место для перетаскивания правильного порядка слов -->
-  </div>
-
-  <div class="result" id="resultBox">
-    <!-- Результат будет здесь -->
-  </div>
+  <div class="result" id="resultBox"></div>
 
   <!-- Кнопка "Показать ответ" -->
   <button class="show-answer-button" onclick="showAnswer()">Показать ответ</button>
 </div>
 
 <script>
-  const sentences = [
+  const presentSentences = [
     ["I", "play", "football", "every", "week."],
     ["She", "drinks", "coffee", "in", "the", "morning."],
     ["We", "go", "to", "school", "by", "bus."],
     ["He", "watches", "TV", "every", "evening."],
-    ["They", "study", "English", "on", "Mondays."],
-    ["My", "brother", "reads", "books", "at", "night."],
-    ["The", "train", "leaves", "at", "7", "a.m."],
-    ["Birds", "sing", "in", "the", "morning."],
-    ["Cats", "sleep", "most", "of", "the", "day."],
-    ["She", "likes", "chocolate", "very", "much."],
-    ["We", "watch", "movies", "on", "Fridays."],
-    ["He", "goes", "to", "work", "by", "car."],
-    ["I", "visit", "my", "grandma", "every", "weekend."],
-    ["They", "cook", "dinner", "together."],
-    ["He", "does", "his", "homework", "after", "school."],
-    ["The", "sun", "rises", "in", "the", "east."],
-    ["Water", "boils", "at", "100", "degrees."],
-    ["You", "always", "arrive", "on", "time."],
-    ["It", "snows", "in", "winter."],
-    ["My", "dad", "fixes", "cars."],
-    ["We", "need", "more", "practice."],
-    ["They", "play", "games", "every", "Sunday."],
-    ["He", "writes", "emails", "every", "day."],
-    ["I", "don’t", "eat", "meat."]
+    ["They", "study", "English", "on", "Mondays."]
+  ];
+
+  const pastSentences = [
+    ["I", "went", "to", "the", "park", "yesterday."],
+    ["She", "watched", "TV", "last", "night."],
+    ["We", "visited", "the", "museum", "last", "week."],
+    ["He", "studied", "for", "the", "test", "yesterday."],
+    ["They", "played", "football", "in", "the", "afternoon."]
   ];
 
   let correctSentence = [];
@@ -284,10 +219,11 @@
     return array.sort(() => Math.random() - 0.5);
   }
 
-  function showRandomSentence() {
-    const randomIndex = Math.floor(Math.random() * sentences.length);
-    correctSentence = [...sentences[randomIndex]];
-    const words = shuffle([...sentences[randomIndex]]);
+  function showRandomSentence(type) {
+    let sentenceArray = type === 'present' ? presentSentences : pastSentences;
+    const randomIndex = Math.floor(Math.random() * sentenceArray.length);
+    correctSentence = [...sentenceArray[randomIndex]];
+    const words = shuffle([...sentenceArray[randomIndex]]);
     const box = document.getElementById("wordsBox");
     box.innerHTML = "";
 
@@ -342,32 +278,17 @@
       resultBox.textContent = "Правильно!";
       resultBox.style.color = "green";
     } else {
-      resultBox.textContent = "Неправильно. Попробуйте снова!";
+      resultBox.textContent = "Попробуй снова!";
       resultBox.style.color = "red";
     }
   }
 
-  // Функция для показа правильного ответа
   function showAnswer() {
-    const answerBox = document.getElementById("dropBox");
-    answerBox.innerHTML = "";
-
-    correctSentence.forEach(word => {
-      const span = document.createElement("span");
-      span.className = "word";
-      span.textContent = word;
-      span.setAttribute("draggable", false);  // Делаем слова недоступными для перетаскивания
-      answerBox.appendChild(span);
-    });
-
     const resultBox = document.getElementById("resultBox");
-    resultBox.textContent = "Вот правильный порядок слов!";
+    resultBox.textContent = "Ответ: " + correctSentence.join(" ");
     resultBox.style.color = "blue";
   }
 </script>
 
 </body>
 </html>
-
-
-
