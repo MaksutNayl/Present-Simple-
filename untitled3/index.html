@@ -1,0 +1,373 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <p></p>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Present Simple</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #4a90e2, #8e44ad);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .header-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      padding: 40px 60px;
+      text-align: center;
+      font-size: 2.5em;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+      margin-bottom: 40px;
+    }
+
+    .rule-box {
+      background-color: #000;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-box">
+    Present Simple
+  </div>
+
+  <div class="rule-box">
+    <strong>1. Когда используется:</strong><br>
+    Present Simple используется для описания регулярных действий, фактов, расписаний и привычек. Например:<br>
+    — I go to school every day.<br>
+    — The sun rises in the east.
+  </div>
+
+  <div class="rule-box">
+    <strong>2. Образование утвердительных предложений:</strong><br>
+    Для I/You/We/They — используем основную форму глагола:<br>
+    — They play football.<br>
+    Для He/She/It — добавляем -s или -es к глаголу:<br>
+    — She plays tennis. / He watches TV.
+  </div>
+
+  <div class="rule-box">
+    <strong>3. Вопросы и отрицания:</strong><br>
+    Используем вспомогательный глагол do/does:<br>
+    — Do you like pizza? / Does he work here?<br>
+    Для отрицаний:<br>
+    — I don’t like tea. / She doesn’t speak Spanish.
+  </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Present Simple Game</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #4a90e2, #8e44ad);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .game-title {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: black;
+      width: 150px;
+      height: 100px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+      color: white;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .words-box {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 20px;
+      min-height: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      font-size: 1.2em;
+    }
+
+    .word {
+      background-color: white;
+      color: black;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s;
+    }
+
+    .word:hover {
+      background-color: #ddd;
+    }
+
+    .dragging {
+      opacity: 0.5;
+    }
+
+    .drop-target {
+      border: 2px dashed white;
+    }
+
+    .result {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      color: #fff;
+    }
+
+    .show-answer-button {
+      margin-top: 20px;
+      background-color: #8e44ad;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      border: none;
+    }
+
+    .show-answer-button:hover {
+      background-color: #9b59b6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="game-title">🎯 Составь предложение в Present Simple</div>
+
+  <div class="cards">
+    <div class="card" onclick="showRandomSentence()">Card 1</div>
+    <div class="card" onclick="showRandomSentence()">Card 2</div>
+    <div class="card" onclick="showRandomSentence()">Card 3</div>
+    <div class="card" onclick="showRandomSentence()">Card 4</div>
+  </div>
+
+  <div class="words-box" id="wordsBox">
+    <!-- Сюда вставляются слова -->
+  </div>
+
+  <div class="words-box" id="dropBox" style="min-height: 100px; margin-top: 30px;">
+    <!-- Место для перетаскивания правильного порядка слов -->
+  </div>
+
+  <div class="result" id="resultBox">
+    <!-- Результат будет здесь -->
+  </div>
+
+  <!-- Кнопка "Показать ответ" -->
+  <button class="show-answer-button" onclick="showAnswer()">Показать ответ</button>
+</div>
+
+<script>
+  const sentences = [
+    ["I", "play", "football", "every", "week."],
+    ["She", "drinks", "coffee", "in", "the", "morning."],
+    ["We", "go", "to", "school", "by", "bus."],
+    ["He", "watches", "TV", "every", "evening."],
+    ["They", "study", "English", "on", "Mondays."],
+    ["My", "brother", "reads", "books", "at", "night."],
+    ["The", "train", "leaves", "at", "7", "a.m."],
+    ["Birds", "sing", "in", "the", "morning."],
+    ["Cats", "sleep", "most", "of", "the", "day."],
+    ["She", "likes", "chocolate", "very", "much."],
+    ["We", "watch", "movies", "on", "Fridays."],
+    ["He", "goes", "to", "work", "by", "car."],
+    ["I", "visit", "my", "grandma", "every", "weekend."],
+    ["They", "cook", "dinner", "together."],
+    ["He", "does", "his", "homework", "after", "school."],
+    ["The", "sun", "rises", "in", "the", "east."],
+    ["Water", "boils", "at", "100", "degrees."],
+    ["You", "always", "arrive", "on", "time."],
+    ["It", "snows", "in", "winter."],
+    ["My", "dad", "fixes", "cars."],
+    ["We", "need", "more", "practice."],
+    ["They", "play", "games", "every", "Sunday."],
+    ["He", "writes", "emails", "every", "day."],
+    ["I", "don’t", "eat", "meat."]
+  ];
+
+  let correctSentence = [];
+
+  function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
+
+  function showRandomSentence() {
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    correctSentence = [...sentences[randomIndex]];
+    const words = shuffle([...sentences[randomIndex]]);
+    const box = document.getElementById("wordsBox");
+    box.innerHTML = "";
+
+    words.forEach(word => {
+      const span = document.createElement("span");
+      span.className = "word";
+      span.textContent = word;
+      span.setAttribute("draggable", true);
+      span.addEventListener("dragstart", dragStart);
+      span.addEventListener("dragend", dragEnd);
+      box.appendChild(span);
+    });
+
+    const dropBox = document.getElementById("dropBox");
+    dropBox.innerHTML = "";
+  }
+
+  function dragStart(e) {
+    e.target.classList.add("dragging");
+  }
+
+  function dragEnd(e) {
+    e.target.classList.remove("dragging");
+  }
+
+  const dropBox = document.getElementById("dropBox");
+
+  dropBox.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropBox.classList.add("drop-target");
+  });
+
+  dropBox.addEventListener("dragleave", () => {
+    dropBox.classList.remove("drop-target");
+  });
+
+  dropBox.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropBox.classList.remove("drop-target");
+
+    const draggedWord = document.querySelector(".dragging");
+    dropBox.appendChild(draggedWord);
+
+    checkOrder();
+  });
+
+  function checkOrder() {
+    const wordsInDropBox = [...dropBox.children].map(child => child.textContent);
+    const resultBox = document.getElementById("resultBox");
+
+    if (JSON.stringify(wordsInDropBox) === JSON.stringify(correctSentence)) {
+      resultBox.textContent = "Правильно!";
+      resultBox.style.color = "green";
+    } else {
+      resultBox.textContent = "Неправильно. Попробуйте снова!";
+      resultBox.style.color = "red";
+    }
+  }
+
+  // Функция для показа правильного ответа
+  function showAnswer() {
+    const answerBox = document.getElementById("dropBox");
+    answerBox.innerHTML = "";
+
+    correctSentence.forEach(word => {
+      const span = document.createElement("span");
+      span.className = "word";
+      span.textContent = word;
+      span.setAttribute("draggable", false);  // Делаем слова недоступными для перетаскивания
+      answerBox.appendChild(span);
+    });
+
+    const resultBox = document.getElementById("resultBox");
+    resultBox.textContent = "Вот правильный порядок слов!";
+    resultBox.style.color = "blue";
+  }
+</script>
+
+</body>
+</html>
+
+
+
